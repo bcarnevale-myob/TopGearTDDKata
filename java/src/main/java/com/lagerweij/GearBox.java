@@ -7,16 +7,16 @@
  *
  * The assignment is as follows:
  *
- * This is the code for our customer'gearNumber new environmentally friendly electric car.
+ * This is the code for our customer'currentGear new environmentally friendly electric car.
  * The car is very dependent on software for almost everything, and the part that we're
- * working on is the automatic gearNumber box. The code you see is the automatic gearNumber box, which
+ * working on is the automatic currentGear box. The code you see is the automatic currentGear box, which
  * currently shifts up if the engine goes over 2000 rpm, and down if it goes under 500.
  *
- * For our this new car, it'gearNumber been determined that the choice of gearNumber can be much
- * more efficient if we could just set more specific ranges of rpm for each gearNumber.
+ * For our this new car, it'currentGear been determined that the choice of currentGear can be much
+ * more efficient if we could just set more specific ranges of rpm for each currentGear.
  * Future versions of the car could then use actual measurements of fuel consumption
  * to configure those ranges on the fly!
- * Your assignment is to make the gearbox accept a range of rpms for each gearNumber (and
+ * Your assignment is to make the gearbox accept a range of rpms for each currentGear (and
  * of course use that range to shift gears!)
  *
  */
@@ -25,35 +25,32 @@ package com.lagerweij;
 
 public class GearBox {
 
-    private int gearNumber = 0;
-    private int previousRPM = 0;
+    private static final int NEUTRAL = 0;
+    private int currentGear = 0;
+    private int lastReceivedRPM = 0;
 
-    public int getPreviousRPM() {
-        return previousRPM;
+    public int getLastReceivedRPM() {
+        return lastReceivedRPM;
     }
 
-    public int getGearNumber() {
-        return gearNumber;
+    public int getCurrentGear() {
+        return currentGear;
     }
 
-    public void doit(int currentRPM) {
-        if (gearNumber < 0) {
-            // do nothing!
-            previousRPM = currentRPM;
-        } else {
-            if (gearNumber > 0) {
-                if (currentRPM > 2000) {
-                    gearNumber++;
-                } else if (currentRPM < 500) {
-                    gearNumber--;
-                }
-            }
+    public void determineGearFrom(int rpm) {
+        lastReceivedRPM = rpm;
+        if(shouldChangeUpAt(rpm)){
+            currentGear++;
+        }else if(shouldChangeDownAt(rpm)){
+            currentGear--;
         }
-        if (gearNumber > 6) {
-            gearNumber--;
-        } else if (gearNumber < 1) {
-            gearNumber++;
-        }
-        previousRPM = currentRPM;
+    }
+
+    private boolean shouldChangeDownAt(int rpm) {
+        return rpm < 500 && currentGear > 1;
+    }
+
+    private boolean shouldChangeUpAt(int rpm) {
+        return rpm >= 500 && currentGear == NEUTRAL || rpm > 2000;
     }
 }

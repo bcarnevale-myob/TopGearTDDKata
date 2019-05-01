@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e8d636e-447d-4ead-badd-ddb5199253d0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/lagerweij/GearBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/lagerweij/GearBox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/lagerweij/GearBoxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/lagerweij/GearBoxTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -13,30 +13,62 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/lagerweij/GearBox.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/lagerweij/GearBoxTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="137" column="5" selection-start-line="137" selection-start-column="5" selection-end-line="137" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/lagerweij/GearBox.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="438">
+                  <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+                  <folding>
+                    <element signature="e#1339#1340#0" expanded="true" />
+                    <element signature="e#1373#1374#0" expanded="true" />
+                    <element signature="e#1692#1693#0" expanded="true" />
+                    <element signature="e#1743#1744#0" expanded="true" />
+                    <element signature="e#1615#1616#0" expanded="true" />
+                    <element signature="e#1688#1689#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/lagerweij/GearBoxTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="196">
+                  <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/lagerweij/GearBoxTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="214">
+                  <caret line="120" column="25" lean-forward="true" selection-start-line="120" selection-start-column="25" selection-end-line="120" selection-end-column="25" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -44,15 +76,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/lagerweij/GearBox.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/lagerweij/GearBoxTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/lagerweij/GearBox.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="GearBoxTest" />
+    </enabled-run-configurations>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="798" />
+    <option name="height" value="802" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -60,6 +97,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -118,14 +157,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555305892387" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556680434743" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -141,8 +179,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.GearBoxTest.sixthGearIsTopGear">
-    <configuration name="GearBoxTest.changesDownOneGearAtATime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.GearBoxTest">
+    <configuration name="GearBoxTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodingAssignments_Refactoring_Small" />
       <extension name="coverage">
         <pattern>
@@ -152,13 +190,28 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.lagerweij" />
       <option name="MAIN_CLASS_NAME" value="com.lagerweij.GearBoxTest" />
-      <option name="METHOD_NAME" value="changesDownOneGearAtATime" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GearBoxTest.changesBackToFirstGearAt499RPM" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CodingAssignments_Refactoring_Small" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lagerweij.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lagerweij" />
+      <option name="MAIN_CLASS_NAME" value="com.lagerweij.GearBoxTest" />
+      <option name="METHOD_NAME" value="changesBackToFirstGearAt499RPM" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GearBoxTest.gearSixIsTopGear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GearBoxTest.changesToFirstGearAt500RPM" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodingAssignments_Refactoring_Small" />
       <extension name="coverage">
         <pattern>
@@ -168,13 +221,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.lagerweij" />
       <option name="MAIN_CLASS_NAME" value="com.lagerweij.GearBoxTest" />
-      <option name="METHOD_NAME" value="gearSixIsTopGear" />
+      <option name="METHOD_NAME" value="changesToFirstGearAt500RPM" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GearBoxTest.inFirstAndGivenZeroRPMGearIsInZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GearBoxTest.changesToSecondGearAt2001RPM" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodingAssignments_Refactoring_Small" />
       <extension name="coverage">
         <pattern>
@@ -184,13 +237,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.lagerweij" />
       <option name="MAIN_CLASS_NAME" value="com.lagerweij.GearBoxTest" />
-      <option name="METHOD_NAME" value="inFirstAndGivenZeroRPMGearIsInZero" />
+      <option name="METHOD_NAME" value="changesToSecondGearAt2001RPM" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GearBoxTest.inFirstGearAndGivenZeroRPMStaysInFirst" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GearBoxTest.fromNeutralTo2001RPM" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodingAssignments_Refactoring_Small" />
       <extension name="coverage">
         <pattern>
@@ -200,23 +253,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.lagerweij" />
       <option name="MAIN_CLASS_NAME" value="com.lagerweij.GearBoxTest" />
-      <option name="METHOD_NAME" value="inFirstGearAndGivenZeroRPMStaysInFirst" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GearBoxTest.sixthGearIsTopGear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CodingAssignments_Refactoring_Small" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lagerweij.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.lagerweij" />
-      <option name="MAIN_CLASS_NAME" value="com.lagerweij.GearBoxTest" />
-      <option name="METHOD_NAME" value="sixthGearIsTopGear" />
+      <option name="METHOD_NAME" value="fromNeutralTo2001RPM" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -224,11 +261,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GearBoxTest.sixthGearIsTopGear" />
-        <item itemvalue="JUnit.GearBoxTest.changesDownOneGearAtATime" />
-        <item itemvalue="JUnit.GearBoxTest.gearSixIsTopGear" />
-        <item itemvalue="JUnit.GearBoxTest.inFirstGearAndGivenZeroRPMStaysInFirst" />
-        <item itemvalue="JUnit.GearBoxTest.inFirstAndGivenZeroRPMGearIsInZero" />
+        <item itemvalue="JUnit.GearBoxTest" />
+        <item itemvalue="JUnit.GearBoxTest.changesBackToFirstGearAt499RPM" />
+        <item itemvalue="JUnit.GearBoxTest.changesToSecondGearAt2001RPM" />
+        <item itemvalue="JUnit.GearBoxTest.fromNeutralTo2001RPM" />
+        <item itemvalue="JUnit.GearBoxTest.changesToFirstGearAt500RPM" />
       </list>
     </recent_temporary>
   </component>
@@ -243,49 +280,50 @@
       <option name="presentableId" value="Default" />
       <updated>1553130598844</updated>
       <workItem from="1553130600148" duration="3174000" />
-      <workItem from="1555292840774" duration="3115000" />
+      <workItem from="1555292840774" duration="3207000" />
+      <workItem from="1556676906546" duration="3523000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GearBoxTest_doesNotChangeDownAt500RPM - 2019.04.15 at 12h 07m 17s.xml">
-      <configuration name="GearBoxTest.doesNotChangeDownAt500RPM" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GearBoxTest - 2019.04.15 at 12h 07m 23s.xml">
+    <history-entry file="GearBoxTest - 2019.05.01 at 12h 55m 52s.xml">
       <configuration name="GearBoxTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GearBoxTest_gearboxStartsAtZeroRPM - 2019.04.15 at 12h 12m 00s.xml">
-      <configuration name="GearBoxTest.gearboxStartsAtZeroRPM" configurationId="JUnit" />
+    <history-entry file="GearBoxTest - 2019.05.01 at 12h 59m 51s.xml">
+      <configuration name="GearBoxTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GearBoxTest_inFirstAndGivenZeroRPMGearIsInZero - 2019.04.15 at 12h 15m 41s.xml">
-      <configuration name="GearBoxTest.inFirstAndGivenZeroRPMGearIsInZero" configurationId="JUnit" />
+    <history-entry file="GearBoxTest_changesBackToFirstGearAt499RPM - 2019.05.01 at 13h 00m 48s.xml">
+      <configuration name="GearBoxTest.changesBackToFirstGearAt499RPM" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GearBoxTest_inFirstGearAndGivenZeroRPMStaysInFirst - 2019.04.15 at 12h 17m 07s.xml">
-      <configuration name="GearBoxTest.inFirstGearAndGivenZeroRPMStaysInFirst" configurationId="JUnit" />
+    <history-entry file="GearBoxTest_changesBackToFirstGearAt499RPM - 2019.05.01 at 13h 00m 52s.xml">
+      <configuration name="GearBoxTest.changesBackToFirstGearAt499RPM" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GearBoxTest_gearSixIsTopGear - 2019.04.15 at 12h 24m 26s.xml">
-      <configuration name="GearBoxTest.gearSixIsTopGear" configurationId="JUnit" />
+    <history-entry file="GearBoxTest - 2019.05.01 at 13h 00m 58s.xml">
+      <configuration name="GearBoxTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GearBoxTest_changesDownOneGearAtATime - 2019.04.15 at 12h 29m 20s.xml">
-      <configuration name="GearBoxTest.changesDownOneGearAtATime" configurationId="JUnit" />
+    <history-entry file="GearBoxTest - 2019.05.01 at 13h 01m 34s.xml">
+      <configuration name="GearBoxTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GearBoxTest_changesDownOneGearAtATime - 2019.04.15 at 12h 29m 50s.xml">
-      <configuration name="GearBoxTest.changesDownOneGearAtATime" configurationId="JUnit" />
+    <history-entry file="GearBoxTest - 2019.05.01 at 13h 03m 15s.xml">
+      <configuration name="GearBoxTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GearBoxTest_sixthGearIsTopGear - 2019.04.15 at 12h 31m 15s.xml">
-      <configuration name="GearBoxTest.sixthGearIsTopGear" configurationId="JUnit" />
+    <history-entry file="GearBoxTest - 2019.05.01 at 13h 03m 37s.xml">
+      <configuration name="GearBoxTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="GearBoxTest_sixthGearIsTopGear - 2019.04.15 at 12h 31m 44s.xml">
-      <configuration name="GearBoxTest.sixthGearIsTopGear" configurationId="JUnit" />
+    <history-entry file="GearBoxTest - 2019.05.01 at 13h 04m 12s.xml">
+      <configuration name="GearBoxTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GearBoxTest - 2019.05.01 at 13h 05m 01s.xml">
+      <configuration name="GearBoxTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6289000" />
+    <option name="totallyTimeSpent" value="9904000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="798" extended-state="0" />
+    <frame x="0" y="23" width="1909" height="977" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13876967" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.10498125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -293,8 +331,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32918552" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28328612" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32881355" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.28248587" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -302,9 +340,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.26155582" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32844242" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32768363" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -319,20 +357,40 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/test/java/com/lagerweij/GearBoxTest.java</url>
+          <line>8</line>
+          <properties field="NEUTRAL_GEAR" class="com.lagerweij.GearBoxTest" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/lagerweij/GearBox.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/lagerweij/GearBoxTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+        <state relative-caret-position="196">
+          <caret line="88" column="16" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/lagerweij/GearBoxTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/lagerweij/GearBox.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="137" column="5" selection-start-line="137" selection-start-column="5" selection-end-line="137" selection-end-column="5" />
+        <state relative-caret-position="438">
+          <caret line="49" column="28" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1339#1340#0" expanded="true" />
+            <element signature="e#1373#1374#0" expanded="true" />
+            <element signature="e#1692#1693#0" expanded="true" />
+            <element signature="e#1743#1744#0" expanded="true" />
+            <element signature="e#1615#1616#0" expanded="true" />
+            <element signature="e#1688#1689#0" expanded="true" />
           </folding>
         </state>
       </provider>
