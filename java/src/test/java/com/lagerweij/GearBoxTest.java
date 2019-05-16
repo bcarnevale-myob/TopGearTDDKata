@@ -2,6 +2,9 @@ package com.lagerweij;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static junit.framework.Assert.assertEquals;
 
 public class GearBoxTest {
@@ -10,7 +13,7 @@ public class GearBoxTest {
 
     @Test
     public void determineGearFromUpdatesLastReceivedRPM() {
-        GearBox gearBox = new GearBox();
+        GearBox gearBox = createGearBox();
         gearBox.determineGearFrom(1232);
         int firstRPM = gearBox.getLastReceivedRPM();
         gearBox.determineGearFrom(12);
@@ -22,7 +25,7 @@ public class GearBoxTest {
 
     @Test
     public void gearboxStartsAtNeutralGear() {
-        GearBox gearBox = new GearBox();
+        GearBox gearBox = createGearBox();
         int actualGear = gearBox.getCurrentGear();
 
         assertEquals(NEUTRAL_GEAR, actualGear);
@@ -30,7 +33,7 @@ public class GearBoxTest {
 
     @Test
     public void changesToFirstGearAt500RPM() {
-        GearBox gearBox = new GearBox();
+        GearBox gearBox = createGearBox();
         gearBox.determineGearFrom(500);
         int actualGear = gearBox.getCurrentGear();
 
@@ -39,7 +42,7 @@ public class GearBoxTest {
 
     @Test
     public void fromNeutralTo2001RPM() {
-        GearBox gearBox = new GearBox();
+        GearBox gearBox = createGearBox();
 
         gearBox.determineGearFrom(2001);
         int actualGear = gearBox.getCurrentGear();
@@ -124,8 +127,20 @@ public class GearBoxTest {
         assertEquals(6, actualGear);
     }
 
+    private GearBox createGearBox() {
+        List<Gear> gears = new ArrayList<Gear>();
+        gears.add(new Gear(500, 2000));
+        gears.add(new Gear(500, 2000));
+        gears.add(new Gear(500, 2000));
+        gears.add(new Gear(500, 2000));
+        gears.add(new Gear(500, 2000));
+        gears.add(new Gear(500, 2000));
+        gears.add(new Gear(500, 2000));
+        return new GearBox(gears);
+    }
+
     private GearBox createGearBoxInFirstGear() {
-        GearBox gearBox = new GearBox();
+        GearBox gearBox = createGearBox();
         gearBox.determineGearFrom(500);
         return gearBox;
     }

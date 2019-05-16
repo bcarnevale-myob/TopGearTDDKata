@@ -23,11 +23,24 @@
 
 package com.lagerweij;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 public class GearBox {
 
-    private static final int NEUTRAL = 0;
+    private Gear NEUTRAL_GEAR;
+    private Gear TOP_GEAR;
     private int currentGear = 0;
     private int lastReceivedRPM = 0;
+    private final List<Gear> gears;
+
+    public GearBox(List<Gear> gears) {
+        this.gears = gears;
+
+        NEUTRAL_GEAR = this.gears.get(0);
+        TOP_GEAR = this.gears.get(this.gears.size()-1);
+    }
 
     public int getLastReceivedRPM() {
         return lastReceivedRPM;
@@ -46,11 +59,21 @@ public class GearBox {
         }
     }
 
-    private boolean shouldChangeDownAt(int rpm) {
-        return rpm < 500 && currentGear > 1;
+    private boolean shouldChangeUpAt(int rpm) {
+        if(currentGear == gears.indexOf(TOP_GEAR)) { return false; }
+        return rpm >= changeDownAt() && currentGear == gears.indexOf(NEUTRAL_GEAR) || rpm > changeUpAt();
     }
 
-    private boolean shouldChangeUpAt(int rpm) {
-        return rpm >= 500 && currentGear == NEUTRAL || rpm > 2000;
+    private int changeUpAt() {
+        return gears.get(currentGear).getHighestRPM();
     }
+
+    private int changeDownAt() {
+        return gears.get(currentGear).getLowestRPM();
+    }
+
+    private boolean shouldChangeDownAt(int rpm) {
+        return rpm < changeDownAt() && currentGear > 1;
+    }
+
 }
